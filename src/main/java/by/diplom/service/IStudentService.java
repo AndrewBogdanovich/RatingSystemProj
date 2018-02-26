@@ -1,9 +1,11 @@
 package by.diplom.service;
 
 import by.diplom.model.Student;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface IStudentService {
 
     void addStudent(Student student);

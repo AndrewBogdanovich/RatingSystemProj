@@ -1,18 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Andrew
-  Date: 26.02.2018
-  Time: 14:25
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
 <br/>
-<a href="/students" target="_blank">Students list</a>
+<a href="<c:url value="/students"/>" target="_blank">Students list</a>
 <br/>
 </body>
 </html>

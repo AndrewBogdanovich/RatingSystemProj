@@ -2,6 +2,7 @@ package by.diplom.service;
 
 import by.diplom.dao.IStudentDao;
 import by.diplom.model.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,6 +10,7 @@ import java.util.List;
 
 @Service
 public class StudentServiceImpl implements IStudentService {
+    @Autowired
     private IStudentDao iStudentDao;
 
     public void setiStudentDao(IStudentDao iStudentDao) {
